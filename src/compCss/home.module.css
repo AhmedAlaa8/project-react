@@ -1,3 +1,7 @@
 .cc{
     color: #00ff55;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }

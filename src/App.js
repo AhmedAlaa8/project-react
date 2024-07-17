@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Header from "./comp/header";
+import MainCon from "./comp/mainCon";
+import { Helmet } from 'react-helmet-async';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+
+        <>
+            <Helmet>
+                <title>Hello</title>
+            </Helmet>
+            <Header/>
+            <MainCon aa="App"/>
+
+        </>
+    );
 }
 
 export default App;
